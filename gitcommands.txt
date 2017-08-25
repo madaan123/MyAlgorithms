@@ -45,3 +45,13 @@ git remote add origin https://github.com/madaan123/MyAlgorithms.git	// This comm
 git remote add <name> <address>					// To add new remotes to our local repository
 git remove rm <name>						// To remove a remote from our local repository
 git push -u <name> <branch>					// To push our local repository to the server
+
+git clone https://github.com/madaan123/MyAlgorithms.git		// To clone or make a copy of the repository in your system
+(git clone command downloads the repository and creates a remote named as origin which can be checked by command - git remote -v)
+git branch Testing						// To create a new branch named as Testing
+git branch							// To see all the branches present and current branch
+git checkout Testing						// To switch to barnch Testing
+ls								// To see directories and files in the current directory
+git merge Testing						// To merge Testing branch with master branch
+git branch -d Testing 						// To delete Testing branch
+git checkout -b admin						// To create a new branch admin and set it as current branch
