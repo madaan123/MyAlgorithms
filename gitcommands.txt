@@ -62,3 +62,11 @@ git tag 							// To see the list of available tags
 git checkout v0.0.1						// To set the current tag to v0.0.1
 git tag -a v0.0.3 -m "version 0.0.3"				// To craete a new tag
 git push --tags							// To push the tags to remote repository
+
+git fetch							// To fetch down any changes from global repository to current repository
+git rebase
+Three tasks are performed by git rebase
+1.Move all changes to master which are niot in origin/master to a temporary area
+2.Run all origin master commits
+3.Run all commits in the temporary area on top of our master one at a time.
+so ita avoids merge commits
