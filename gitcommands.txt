@@ -1,0 +1,44 @@
+Github is a distributed version control system which helps to manage the repositories.
+
+These are a list of few commands that you can use frequently on github(git bash)
+
+
+git help  							// Take help from github help section for different commands
+
+git config 							// To set the basic configurations on github
+
+git config --global user.name "Ashish Madaan"     		// Set your username on github
+
+git config --global user.email ashishmadaan6@gmail.com 		// Set your email on github
+
+git config --global color.ui true 				// To see different colours on command line
+
+
+mkdir store							// Create a directory if not created
+
+
+cd store 							// To go inside the directory
+
+
+git init							// To create a local git repository for us in our store folder
+git status 							// To see whats changed since last commit
+git add Readme.txt						// To add a file Readme.txt to the staging area to track its changes
+git commit -m "Created a Readme.txt"				// To commit our changes(taking a snapshot) and providing a message to remember
+git log								// To check the history of commits
+
+Different ways to use add command
+git add <list of files>						// To add a specific list of files to staging area
+git add --all 							// To add all files of current directory to staging area
+git add *.txt							// To add all text files of the current directory to staging area
+git add docs/*.txt						// To add all text files of a particular directory to staging area
+git add docs/							// To add all files in a particular directory to staging area
+git add "*.txt"							// To add text files of entire project to staging area
+
+git diff							// To figure out what changes you made since last commit
+gti reset head license						// To undo staging of the file that was added in the staging area
+git checkout --license						// To Blow away all changes since the last commit of the file
+git commit -a -m "Readme.md"					// To add any of our tracked files to staging area and commit them
+git reset --soft HEAD^						// To undo last commit and bring file to staging area
+git reset --hard HEAD^						// To undo last commit and remove file from the staging area as well(In case we went horribly wrong)
+git reset --hard HEAD^^						// To undo last 2 commitsand all changes
+git remote add origin https://github.com/madaan123/MyAlgorithms.git	// This commands make a bokmark which signifies that this particular remote refers to this URL
