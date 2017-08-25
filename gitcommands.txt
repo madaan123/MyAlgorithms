@@ -55,3 +55,10 @@ ls								// To see directories and files in the current directory
 git merge Testing						// To merge Testing branch with master branch
 git branch -d Testing 						// To delete Testing branch
 git checkout -b admin						// To create a new branch admin and set it as current branch
+
+git branch -r							// To look at all the remote branches
+git branch -D Testing						// To forcefully delete a branch without making commmits
+git tag 							// To see the list of available tags
+git checkout v0.0.1						// To set the current tag to v0.0.1
+git tag -a v0.0.3 -m "version 0.0.3"				// To craete a new tag
+git push --tags							// To push the tags to remote repository
