@@ -42,3 +42,6 @@ git reset --soft HEAD^						// To undo last commit and bring file to staging are
 git reset --hard HEAD^						// To undo last commit and remove file from the staging area as well(In case we went horribly wrong)
 git reset --hard HEAD^^						// To undo last 2 commitsand all changes
 git remote add origin https://github.com/madaan123/MyAlgorithms.git	// This commands make a bokmark which signifies that this particular remote refers to this URL
+git remote add <name> <address>					// To add new remotes to our local repository
+git remove rm <name>						// To remove a remote from our local repository
+git push -u <name> <branch>					// To push our local repository to the server
